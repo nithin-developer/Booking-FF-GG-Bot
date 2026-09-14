@@ -1,0 +1,253 @@
+/* ============================================================
+   Landing Page – ROBERTHALFEMIR Style (Header, Captcha, Meta, Progress Footer)
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F1F5F8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+.landing-header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 2px solid #E2E8EB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: #F1F5F8;
+}
+
+@media (min-width: 640px) {
+  .landing-header {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-header {
+    padding: 0 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-header {
+    padding: 0 128px;
+  }
+}
+
+.landing-header-logo {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.landing-header-close-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  color: #384955;
+}
+
+/* Main Body Content */
+.landing-body-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Captcha Card */
+.landing-captcha-card {
+  background: #ffffff;
+  border: 2px solid #E2E8EB;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 512px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.landing-captcha-logo {
+  width: 240px;
+  height: auto;
+  object-fit: contain;
+}
+
+.landing-captcha-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #033941;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.landing-captcha-desc {
+  text-align: center;
+  color: #4b5563;
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.landing-captcha-divider {
+  width: 144px;
+  height: 4px;
+  background-color: #033941;
+  margin: 24px 0;
+  border-radius: 2px;
+}
+
+.landing-captcha-btn {
+  width: 100%;
+  height: 56px;
+  border-radius: 9999px;
+  background-color: #033941;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.landing-captcha-btn:hover {
+  background-color: #02505c;
+}
+
+/* Meta Card */
+.landing-meta-card {
+  background: #ffffff;
+  border: 2px solid #E2E8EB;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 600px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+@media (min-width: 640px) {
+  .landing-meta-card {
+    padding: 48px;
+  }
+}
+
+.landing-meta-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #033941;
+}
+
+.landing-meta-hr {
+  height: 2px;
+  margin: 20px 0;
+  background-color: #D9D9D9;
+  border: none;
+}
+
+.landing-meta-p1 {
+  color: #272727;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.landing-meta-p2 {
+  color: #4E4E4E;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.landing-meta-btn {
+  margin-top: 24px;
+  width: 100%;
+  height: 56px;
+  border-radius: 9999px;
+  background-color: #0865FE;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.landing-meta-btn:hover {
+  background-color: #0052d4;
+}
+
+.landing-meta-btn-icon {
+  height: 24px;
+  width: auto;
+}
+
+.landing-google-btn {
+  margin-top: 24px;
+  width: 100%;
+  height: 56px;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  color: #1f1f1f;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #747775;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.landing-google-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #5f6368;
+}
+
+/* Footer Progress */
+.landing-footer {
+  width: 100%;
+  padding: 20px 0 52px;
+  background-color: #ffffff;
+  border-top: 2px solid #E2E8EB;
+}
+
+/* Page Loader overlay */
+.landing-page-loader {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

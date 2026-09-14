@@ -1,0 +1,159 @@
+/* ============================================================
+   Modal Chrome – Browser-like overlay for FB & Google modals
+   ============================================================ */
+
+/* Backdrop */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  animation: modal-fade-in 0.2s ease-out;
+}
+
+@keyframes modal-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Desktop layout ─────────────────────────────────────────── */
+.modal-chrome {
+  display: flex;
+  flex-direction: column;
+  width: 1300px;
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: 16px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  background: #F2F3F7;
+  overflow: hidden;
+  animation: modal-scale-in 0.25s ease-out;
+}
+
+@keyframes modal-scale-in {
+  from { transform: scale(0.96); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+/* Tab bar */
+.modal-chrome__tab-bar {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 1px solid #D9D9D9;
+  background: #F2F3F7;
+  border-radius: 16px 16px 0 0;
+  flex-shrink: 0;
+}
+
+.modal-chrome__tab-favicon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  object-fit: contain;
+}
+
+.modal-chrome__tab-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #454444;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal-chrome__close-btn {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  margin-left: 16px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s;
+}
+.modal-chrome__close-btn:hover {
+  color: #333;
+}
+
+/* Address bar */
+.modal-chrome__address-bar {
+  padding: 0 8px;
+  flex-shrink: 0;
+}
+.modal-chrome__address-bar-inner {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #D9D9D9;
+  border-radius: 11px;
+  padding: 4px 8px;
+  margin: 8px 0 12px;
+  height: 35px;
+  /* justify-content: center; */
+}
+.modal-chrome__lock-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+.modal-chrome__url {
+  font-size: 12px;
+  color: #595959;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.modal-chrome__url-https {
+  color: #41bf56;
+}
+
+/* Content area */
+.modal-chrome__content {
+  flex: 1;
+  overflow-y: auto;
+  background: #F2F3F7;
+  border-radius: 0 0 16px 16px;
+}
+
+/* ── Mobile layout ──────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .modal-chrome {
+    width: 100%;
+    height: 85vh;
+    max-height: 85vh;
+    border-radius: 16px;
+  }
+  .modal-chrome__tab-bar {
+    display: none; /* Mobile doesn't show the tab bar */
+  }
+  .modal-chrome__address-bar {
+    padding: 8px 8px 0;
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 8px;
+  }
+  .modal-chrome__address-bar-inner {
+    background: #f4f6fa;
+    border-color: #d1d5db;
+    border-radius: 12px;
+    margin: 0;
+    height: 32px;
+  }
+  .modal-chrome__content {
+    background: #fff;
+  }
+}
+
+/* Google modal variant – white content bg */
+.modal-chrome--google .modal-chrome__content {
+  background: #fff;
+}
