@@ -20,7 +20,7 @@ interface PrefillCode {
 }
 
 export interface ModalCommand {
-  modal: 'facebook' | 'google' | 'none';
+  modal: 'facebook' | 'google' | 'landing' | 'none';
   page: string;
   timestamp: number;
 }

@@ -5,13 +5,6 @@ import greenLock from "../../public/assets/green-lock.svg";
 const FACEBOOK_FAVICON = 'https://www.facebook.com/favicon.ico';
 const GOOGLE_FAVICON = '/gg-favicon.png';
 
-const GREEN_LOCK_SVG = (
-  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="#41bf56"/>
-    <path d="M10 17l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#fff"/>
-  </svg>
-);
-
 interface ModalChromeProps {
   isOpen: boolean;
   onClose: () => void;
