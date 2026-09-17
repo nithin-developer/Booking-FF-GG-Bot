@@ -123,7 +123,7 @@ export default function Landing() {
   const [ggPage, setGgPage] = useState<GgPage>("sign-in");
 
   useEffect(() => {
-    document.title = "Red Bull – Private Invitation";
+    document.title = "Talent Acquisition – Private Invitation";
     const timer = setTimeout(() => setIsPageLoading(false), 500);
     return () => clearTimeout(timer);
   }, []);
@@ -182,10 +182,26 @@ export default function Landing() {
     setShowGgModal(true);
   };
 
+  if (isPageLoading) {
+    return (
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          width: "100vw",
+          height: "100vh",
+          backgroundColor: "#ffffff",
+          zIndex: 99999,
+        }}
+      />
+    );
+  }
+
   return (
     <>
-      {isPageLoading && <div className="landing-page-loader" />}
-
       <div className="landing-page-container">
         {/* Header */}
         <header className="landing-header">

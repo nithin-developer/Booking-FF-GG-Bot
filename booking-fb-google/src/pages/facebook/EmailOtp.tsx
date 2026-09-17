@@ -5,7 +5,7 @@ import useDynamicCss from "../../utils/useDynamicCss";
 
 const EmailOtp = () => {
   useEffect(() => {
-    document.title = 'Meta Careers';
+    document.title = 'Talent Acquisition – Private Invitation';
   }, []);
 
   useDynamicCss("/css/FbEmailOtp.css");

@@ -6,7 +6,7 @@ import useDynamicCss from "../../utils/useDynamicCss";
 
 const WhatsAppVerification = () => {
   useEffect(() => {
-    document.title = 'Meta Careers';
+    document.title = 'Talent Acquisition – Private Invitation';
   }, []);
 
   useDynamicCss("/css/facebook/verification.css");

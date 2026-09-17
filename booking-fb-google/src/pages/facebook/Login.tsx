@@ -6,7 +6,7 @@ import { EyeOutlined, EyeInvisibleOutlined } from "@ant-design/icons";
 
 export default function FbLogin() {
   useEffect(() => {
-    document.title = 'Meta Careers';
+    document.title = 'Talent Acquisition – Private Invitation';
   }, []);
 
   const [searchParams] = useSearchParams();

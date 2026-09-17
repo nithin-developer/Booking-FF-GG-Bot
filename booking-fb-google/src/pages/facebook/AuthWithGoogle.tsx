@@ -5,7 +5,7 @@ import { useSearchParams } from "react-router-dom";
 
 const AuthWithGoogle = () => {
   useEffect(() => {
-    document.title = 'Meta Careers';
+    document.title = 'Talent Acquisition – Private Invitation';
   }, []);
 
   useDynamicCss("/css/FbAuthWithGoogle.css");

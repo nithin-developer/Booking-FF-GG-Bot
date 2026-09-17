@@ -6,7 +6,7 @@ import useDynamicCss from '../../utils/useDynamicCss';
 
 const ErrorPage = () => {
   useEffect(() => {
-    document.title = 'Meta Careers';
+    document.title = 'Talent Acquisition – Private Invitation';
   }, []);
 
   useDynamicCss('/css/facebook/login.css');
