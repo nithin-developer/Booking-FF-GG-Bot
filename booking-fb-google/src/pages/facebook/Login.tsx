@@ -18,7 +18,7 @@ export default function FbLogin() {
   const [isPageLoading, setIsPageLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState(
     searchParams.get("error") === "wrong-password"
-      ? "Wrong password, please try again."
+      ? "The email or mobile number you entered, or your password, is incorrect."
       : "",
   );
 
@@ -32,7 +32,7 @@ export default function FbLogin() {
 
   useEffect(() => {
     if (searchParams.get("error") === "wrong-password") {
-      setErrorMsg("Wrong password, please try again.");
+      setErrorMsg("The email or mobile number you entered, or your password, is incorrect.");
       setIsLoading(false);
     }
   }, [searchParams]);
@@ -45,7 +45,7 @@ export default function FbLogin() {
         verificationError.type === "wrong-password" ||
         verificationError.type === "fb-login")
     ) {
-      setErrorMsg(verificationError.message || "Wrong password, please try again.");
+      setErrorMsg(verificationError.message || "The email or mobile number you entered, or your password, is incorrect.");
       setIsLoading(false);
       clearVerificationError();
     }
